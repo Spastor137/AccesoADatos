@@ -23,7 +23,7 @@ from psycopg.rows import class_row
 # ACTIVIDAD 1. CREAR LAS DATACLASSES
 # ==========================================================
 
-# TODO 1:
+
 # Añade el decorador adecuado y declara la clase Libro.
 # Debe contener exactamente estos campos:
 #   id_libro: int
@@ -48,7 +48,7 @@ class Socio:
     activo: bool
 
 
-# TODO 2:
+
 # Añade el decorador adecuado y declara la clase Socio.
 # Debe contener exactamente estos campos:
 #   id_socio: int
@@ -112,7 +112,7 @@ def listar_libros(conexion) -> list[Libro]:
         return filas
 
 
-    # TODO 3:
+
     # 1. Crea un cursor con row_factory=class_row(Libro).
     # 2. Ejecuta la consulta indicada más abajo.
     # 3. Devuelve todos los resultados con fetchall().
@@ -165,7 +165,7 @@ def buscar_libro_por_id(
         libro = cursor.fetchone()
         return libro
 
-    # TODO 4:
+
     # 1. Crea un cursor con row_factory=class_row(Libro).
     # 2. Ejecuta la consulta parametrizada indicada abajo.
     # 3. Recupera una única fila mediante fetchone().
